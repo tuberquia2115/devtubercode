@@ -1,0 +1,159 @@
+{
+  "name": "Jose Manuel",
+  "headerTaglineOne": "Hola 👋",
+  "headerTaglineTwo": "Soy Jose Manuel",
+  "headerTaglineThree": "Frontend Developer",
+  "headerTaglineFour": "Comparto mi conocimiento en desarrollo de software con el propósito de ayudar a personas y marcas a cumplir sus objetivos digitales, proporcionando soluciones efectivas para las necesidades de los usuarios.",
+  "navigation": [
+    { "id": 1, "label": "Proyectos", "path": "#projects" },
+    { "id": 2, "label": "Acerca de mí", "path": "#about" },
+    { "id": 3, "label": "Contacto", "path": "#contact" }
+  ],
+  "section_projects": {
+    "title": "Mis proyectos 👨‍💻",
+    "subtitle": "Proyectos en los que he trabajado.",
+    "description": "Desarrollo de aplicaciones web y móviles con interfaces atractivas y usabilidad intuitiva, centradas en la experiencia del usuario.",
+    "projects": [
+      {
+        "name": "Casino en Chile",
+        "description": "Mantener el sitio interno de apuestas (casino)  Este sitio es altamente escalable y se adhiere a los principios de código SOLID, con un fuerte énfasis en la experiencia del usuario (UX) Mis responsabilidades como desarrollador eran mantener actualizaciones de diseño continuas y optimización del rendimiento, asegurando una experiencia de usuario fluida y atractiva.",
+        "url_banner": "/assets/banners/banner-casinoenchile.png",
+        "path": "https://skin2-latamwin.dev.andes-system.com/",
+        "technologies_used": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Next-auth",
+          "Hooks",
+          "Date-fns",
+          "React-Hook-Form",
+          "clsx",
+          "Axios",
+          "Tailwindcss",
+          "React-Testing-Library",
+          "Prettier",
+          "Eslint",
+          "Husky"
+        ]
+      },
+      {
+        "name": "Eyoma by Amplitudes",
+        "description": "Eyoma es una aplicación que permite alquilar autos y hoteles, así como comprar boletos de trenes y vuelos. Es una aplicación móvil con un fuerte enfoque en la experiencia del usuario.",
+        "url_banner": "/assets/banners/banner-eyoma.png",
+        "path": "https://www.amplitudes-business-travel.com/eyoma/",
+        "technologies_used": [
+          "React.js",
+          "React Native",
+          "TypeScript",
+          "JavaScript",
+          "Hooks",
+          "Native Base",
+          "Axios",
+          "React-Hook-Form",
+          "React-Navigation",
+          "Jest",
+          "Enzyme",
+          "react-native-vector-icons",
+          "react-native-image-picker",
+          "Prettier",
+          "Eslint",
+          "Husky"
+        ]
+      },
+      {
+        "name": "Hologram",
+        "description": "Hologram es una aplicación de mensajería y billetera de credenciales verificables con verdaderas funciones de preservación de la privacidad.",
+        "url_banner": "/assets/banners/banner-hologram.png",
+        "path": "https://play.google.com/store/apps/details?id=io.twentysixty.mobileagent.m&pcampaignid=web_share",
+        "technologies_used": [
+          "React",
+          "React Native",
+          "TypeScript",
+          "JavaScript",
+          "Hooks",
+          "Native Base",
+          "Axios",
+          "React-Hook-Form",
+          "Jest",
+          "Enzyme",
+          "react-native-vector-icons",
+          "react-native-image-picker",
+          "Axios",
+          "React-Navigation",
+          "Prettier",
+          "Eslint"
+        ]
+      },
+      {
+        "name": "Uniclick by unififn",
+        "description": "Uniclick es una plataforma financiera respaldada por UNIFIN que otorga créditos por hasta $2.5 millones de pesos para apoyar a las pequeñas y medianas empresas mexicanas. ",
+        "url_banner": "/assets/banners/banner-uniclick.png",
+        "path": "https://www.uniclick.com.mx/",
+        "technologies_used": [
+          "React",
+          "Next.js",
+          "Material-ui",
+          "Hooks",
+          "TypeScript",
+          "JavaScript",
+          "React-Testing-Library",
+          "Prettier",
+          "Eslint",
+          "Husky",
+          "Axios"
+        ]
+      },
+      {
+        "name": "Shipal",
+        "description": "Aplicación web resposive que permite gestionar los envíos nacionales e internacionales de las de pequeños y medianas empresas usando las mejores transportadoras del mercado.",
+        "url_banner": "/assets/banners/banner-shipal.png",
+        "path": "https://shipal.co/",
+        "technologies_used": [
+          "React",
+          "Bootstrap",
+          "React-Bootstrap",
+          "Hooks",
+          "Jest",
+          "Prettier",
+          "Eslint",
+          "Husky",
+          "Firebase",
+          "Formik",
+          "Yup",
+          "Redux",
+          "Axios",
+          "styled-components"
+        ]
+      },
+      {
+        "name": "PESV Y PLSV",
+        "description": "PESV y PLSV es una plataforma que permite la creación de Plan estrategico de seguridad viual y Plan local se seguridad vial que se solita en el municipio de palmira - Colombia",
+        "url_banner": "/assets/banners/banner-pesv-plsv.png",
+        "path": "https://mipesv-1110d.web.app/auth/login/",
+        "technologies_used": [
+          "React",
+          "Material-ui",
+          "Chart.js",
+          "react-chartjs-2",
+          "TypeScript",
+          "Eslint",
+          "Prettier",
+          "Husky",
+          "clsx",
+          "Hooks",
+          "Firebase",
+          "Firebase Admin",
+          "firebase-functions",
+          "moment",
+          "draft-js"
+        ]
+      }
+    ]
+  },
+  "section_aboutme": {
+    "title": "Acerca de mi 💫",
+    "subtitle": "Un poco acerca de mi",
+    "description": "Desarrollador de software con enfoque en el desarrollo de aplicaciones webs y mobiles,  con más de 5 años de experiencia, me encanta la programación, me apasiona el aprendizaje continuo, enfrentar nuevos retos, compartir mis conocimientos y seguir aprendiendo, he contribuido al desarrollo de aplicaciones web y móviles que me han permitido ganar experiencia en el ",
+    "profile_url": "/assets/profile.png"
+  }
+}
