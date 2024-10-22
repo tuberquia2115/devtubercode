@@ -1,0 +1,15 @@
+.section_projects {
+  margin-top: 2rem;
+}
+
+.container_column {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.container_header_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

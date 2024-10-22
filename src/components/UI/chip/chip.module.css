@@ -1,0 +1,10 @@
+.container_chip {
+  border-radius: 15px;
+  padding: 2px 8px;
+  width: fit-content;
+  background-color: var(--color-three);
+}
+
+.label_chip {
+  text-transform: capitalize;
+}
