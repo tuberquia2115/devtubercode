@@ -1,0 +1,25 @@
+.summary_main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 520px;
+
+  & .hello {
+    font-size: 2rem;
+  }
+
+  & .container_desc_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  & .description_summary {
+    font-size: 1.25rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}

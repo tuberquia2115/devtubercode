@@ -1,7 +1,7 @@
 import { portfolio } from "@/data";
 
 import styles from "./header.module.css";
-import { Logo } from "../logo";
+import { Logo } from "../../components/logo";
 
 export const Header = () => {
   return (

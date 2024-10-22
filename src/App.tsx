@@ -1,16 +1,7 @@
-import { Header } from "./components/header/header";
-import { SectionSummary, SectionProjects } from "@/containers";
+import { Main } from "./views/main";
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <article>
-        <SectionSummary />
-        <SectionProjects />
-      </article>
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;

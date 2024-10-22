@@ -1,20 +1,19 @@
 import { portfolio } from "@/data";
-import styles from "./section-summary.module.css";
-import stylesGlobals from "@/styles/globals.module.css";
 import { Button } from "@/components/UI";
+import styles from "./summary.module.css";
 
-export const SectionSummary = () => {
+export const Summary = () => {
   return (
-    <section className={styles.section_summary}>
-      <div className={`${stylesGlobals.container} `}>
+    <section className="bg-summary">
+      <div className="container">
         <div className={styles.summary_main}>
-          <p className={styles.hello}>
+          <p className={`text text-gray ${styles.hello}`}>
             {portfolio.headerTaglineOne} {portfolio.headerTaglineTwo}
           </p>
-          <h2 className={styles.role}>{portfolio.headerTaglineThree}</h2>
+          <h2 className="text text-h1">{portfolio.headerTaglineThree}</h2>
 
           <div className={styles.container_desc_btns}>
-            <p className={styles.description_summary}>
+            <p className={`text text-gray ${styles.description_summary}`}>
               {portfolio.headerTaglineFour}
             </p>
             <div className={styles.buttons}>

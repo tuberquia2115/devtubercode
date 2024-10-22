@@ -1,10 +1,15 @@
 .button {
-  padding: 1rem 2rem;
+  padding: 0.7rem;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: inherit;
   cursor: pointer;
   border: none;
+  font-size: 1em;
   transition: background-color 0.3s ease-in-out;
+  transition: border-color 0.25s;
+  width: max-content;
+
 }
 
 .primary {
@@ -26,6 +31,12 @@
 .danger {
   background-color: var(--info);
   color: var(--text);
+  border: 2px solid var(--info);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--text);
+  }
 }
 
 .outlined {

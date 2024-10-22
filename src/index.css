@@ -1,17 +1,26 @@
-@font-face {
-  font-family: Poppins;
-  font-weight: 400;
-  src: url('./assets/fonts/Poppins-Regular.ttf') format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;700&display=swap');
 
 :root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--title);
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
   --primary: #18272F;
   --secondary: #fbad34;
   --color-three: #646cff;
   --background: #1b1b1b;
   --title: #f5f5f5;
   --info: #D34645;
-  --text: #dddddddd;
+  --text: rgba(221, 221, 221, 0.8666666667);
 }
 
 * {
@@ -22,20 +31,13 @@
   text-decoration: none;
   border: none;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--title);
-  font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  margin: auto;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  color-scheme: dark;
-  font-weight: 400;
-  line-height: 1.5;
-  background: linear-gradient(180deg, var(--primary), var(--background));
+  background: linear-gradient(180deg, var(--background), var(--primary));
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -43,17 +45,161 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border-radius: 50px;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: var(--info);
+    background-color: var(--primary);
   }
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+section,
+footer {
+  padding: 64px 0 !important;
+}
+
+a {
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: inherit;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+
+}
+
+a:hover,
+.link:hover {
+  color: var(--title);
+}
+
+figure img[alt^="card-"] {
+  transition: 0.2s ease-in-out;
+}
+
+figure:hover img[alt^="card-"] {
+  filter: brightness(1.08);
+  transform-style: preserve-3d;
+  transform: translate3d(0px, -5px, 0px) scale3d(1.02, 1.02, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.gap-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gap-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.gap-0-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-grey {
+  color: var(--text);
+}
+
+.text {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+.text-h1,
+.text-h2 {
+  font-family: "Sora", sans-serif;
+}
+
+.text-h1 {
+  font-size: 3rem;
+}
+
+.text-h2 {
+  font-size: 2rem;
+}
+
+.text-h3 {
+  font-size: 1.85rem;
+}
+
+.text-h4 {
+  font-size: 1.5rem;
+}
+
+.text-h5 {
+  font-size: 1.25rem;
+}
+
+.text-green {
+  color: #00FF85;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.bg-summary {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0.1) 100%),
+    url(/assets/banners/banner-profile.png);
+
+  height: 70vh;
+  padding: 12rem 1rem !important;
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.border-button {
+  border-bottom: 2px solid var(--secondary)
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  section,
+  footer {
+    padding: 24px !important;
+  }
+
+  .bg-section-summary {
+    background-position: 45% 100%;
+  }
 }
