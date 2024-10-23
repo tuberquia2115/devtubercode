@@ -14,13 +14,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --primary: #18272F;
+  --primary: #17262e;
   --secondary: #fbad34;
   --color-three: #646cff;
+  --color-four: #1d3557;
   --background: #1b1b1b;
   --title: #f5f5f5;
   --info: #D34645;
   --text: rgba(221, 221, 221, 0.8666666667);
+  --color-green: #00FF85;
 }
 
 * {
@@ -34,8 +36,26 @@
   scroll-behavior: smooth;
 }
 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: medium;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--background);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 body {
-  font-size: 15px;
+  font-size: 17px;
   width: 100%;
   background: linear-gradient(180deg, var(--background), var(--primary));
 
@@ -61,7 +81,7 @@ img {
 
 section,
 footer {
-  padding: 64px 0 !important;
+  padding: 50px 0 !important;
 }
 
 a {
@@ -92,6 +112,12 @@ figure:hover img[alt^="card-"] {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.gap-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .gap-3 {
@@ -142,41 +168,21 @@ figure:hover img[alt^="card-"] {
   font-size: 2rem;
 }
 
-.text-h3 {
-  font-size: 1.85rem;
-}
-
-.text-h4 {
-  font-size: 1.5rem;
-}
-
-.text-h5 {
-  font-size: 1.25rem;
-}
 
 .text-green {
-  color: #00FF85;
-}
-
-.text-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  color: var(--color-green);
 }
 
 .grid {
   display: grid;
   gap: 2rem;
-  padding-bottom: 4rem;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .bg-summary {
   background:
-    linear-gradient(0deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(0deg, rgba(14, 42, 71, .8) 0%, rgba(24, 39, 47, 0.1) 100%),
     url(/assets/banners/banner-profile.png);
 
   height: 70vh;
@@ -187,19 +193,56 @@ figure:hover img[alt^="card-"] {
   background-position: 100% 100%;
 }
 
-.border-button {
-  border-bottom: 2px solid var(--secondary)
-}
-
-
 @media only screen and (max-width: 768px) {
 
   section,
   footer {
-    padding: 24px !important;
+    padding: 20px !important;
   }
 
-  .bg-section-summary {
+  .text-h1 {
+    font-size: xx-large;
+  }
+
+  .text-h2 {
+    font-size: x-large;
+  }
+
+  .grid {
+    padding: 0 0.5rem;
+  }
+
+  .bg-summary {
     background-position: 45% 100%;
+    background-size: contain;
+    padding: 8rem 0 !important;
+  }
+}
+
+.pulse {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 255, 133, 0.4);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 255, 133, 0.4);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 255, 133, 0.4);
   }
 }

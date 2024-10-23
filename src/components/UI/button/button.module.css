@@ -1,5 +1,5 @@
 .button {
-  padding: 0.7rem;
+  padding: 1rem;
   border-radius: 8px;
   font-weight: 500;
   font-family: inherit;
@@ -7,7 +7,6 @@
   border: none;
   font-size: 1em;
   transition: background-color 0.3s ease-in-out;
-  transition: border-color 0.25s;
   width: max-content;
 
 }

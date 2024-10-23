@@ -8,6 +8,7 @@
   height: 400px;
 
   & img {
+    filter: drop-shadow(1px 1px 5px var(--secondary));
     object-fit: contain;
   }
 }

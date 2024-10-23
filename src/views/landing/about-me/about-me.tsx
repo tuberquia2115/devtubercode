@@ -1,9 +1,9 @@
+import { portfolio } from "@/data";
 import { Button } from "@/components";
-import styles from "./about-me.module.css";
-
 import CV_ES from "@/assets/cv-es.pdf";
 import CV_EN from "@/assets/cv-en.pdf";
-import { portfolio } from "@/data";
+
+import styles from "./about-me.module.css";
 
 export const AboutMe = () => {
   const handleDownloadCv = (language: "es" | "en") => {
@@ -15,18 +15,22 @@ export const AboutMe = () => {
 
   return (
     <section id="about" className="container">
-      <div className="grid" style={{ paddingInline: 20 }}>
+      <div className="grid">
         <div className="gap-3">
           <div className="gap-0-5">
-            <p className="text text-h5 text-secondary">
+            <h1 className="text text-h5 text-secondary">
               {portfolio.section_aboutme.title}
-            </p>
+            </h1>
             <h2 className="text text-h2">
               {portfolio.section_aboutme.subtitle}
             </h2>
-            <div className="text text-gray gap-1">
-              <p>{portfolio.section_aboutme.description}</p>
-            </div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: portfolio.section_aboutme.description,
+              }}
+              className="text text-grey gap-1"
+            />
+
             <div className={styles.buttons_cv}>
               <Button
                 label="🖨️ CV ES"

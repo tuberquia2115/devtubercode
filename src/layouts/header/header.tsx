@@ -8,9 +8,9 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container_header}>
         <Logo />
-        <nav>
+        <nav className={styles.nav}>
           <ul>
-            {portfolio.navigation.map((item) => (
+            {portfolio.header.navigation.map((item) => (
               <li key={item.id}>
                 <a href={item.path} aria-label={item.label}>
                   {item.label}

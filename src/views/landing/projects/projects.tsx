@@ -8,7 +8,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className={styles.section_projects}>
-      <div className="container grid border-button">
+      <div className="container grid">
         <div className={styles.container_column}>
           <div className={styles.container_header_section}>
             <h1 className="text text-h5 text-secondary">
@@ -17,14 +17,18 @@ export const Projects = () => {
             <h2 className="text text-h2">
               {portfolio.section_projects.subtitle}
             </h2>
-            <p className="text text-gray">
+            <p className="text text-grey">
               {portfolio.section_projects.description}
             </p>
           </div>
-          {projects.slice(0, 3).map(ProjectCard)}
+          {projects.slice(0, 3).map((project) => (
+            <ProjectCard key={project.name} {...project} />
+          ))}
         </div>
         <div className={styles.container_column}>
-          {projects.slice(3).map(ProjectCard)}
+          {projects.slice(3).map((project) => (
+            <ProjectCard key={project.name} {...project} />
+          ))}
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ type ProjectCard = {
   url_banner: string;
   name: string;
   description: string;
-  technologies_used: string[];
+  technologies_used?: string[];
 };
 
 export const ProjectCard = (props: ProjectCard) => (
@@ -19,11 +19,13 @@ export const ProjectCard = (props: ProjectCard) => (
     <figcaption className={styles.figcaption}>
       <h3>{props.name}</h3>
       <p>{props.description}</p>
-      <div className={styles.container_chips}>
-        {props.technologies_used.map((technology) => (
-          <Chip key={technology} label={technology} />
-        ))}
-      </div>
+      {props.technologies_used && (
+        <div className={styles.container_chips}>
+          {props.technologies_used.map((technology, index) => (
+            <Chip key={`${index}-${technology}`} label={technology} />
+          ))}
+        </div>
+      )}
     </figcaption>
   </figure>
 );

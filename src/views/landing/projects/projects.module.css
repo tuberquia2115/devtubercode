@@ -1,5 +1,8 @@
 .section_projects {
-  margin-top: 2rem;
+  background: linear-gradient(to bottom, transparent, var(--primary)), url(/assets/bg-section-projects.svg);
+
+  padding-top: 2rem;
+  /* padding-bottom: 0px !important; */
 }
 
 .container_column {
@@ -9,7 +12,11 @@
 }
 
 .container_header_section {
+  background-image: linear-gradient(to top, transparent, var(--primary));
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 15px;
+  border-radius: 8px 8px 0px 0px;
+
 }
