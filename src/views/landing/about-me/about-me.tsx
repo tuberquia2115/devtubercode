@@ -1,7 +1,7 @@
 import { portfolio } from "@/data";
 import { Button } from "@/components";
-import CV_ES from "@/assets/cv-es.pdf";
-import CV_EN from "@/assets/cv-en.pdf";
+import CV_ES from "/assets/cv-es.pdf";
+import CV_EN from "/assets/cv-en.pdf";
 
 import styles from "./about-me.module.css";
 
@@ -9,7 +9,7 @@ export const AboutMe = () => {
   const handleDownloadCv = (language: "es" | "en") => {
     const anchor = document.createElement("a");
     anchor.href = language === "es" ? CV_ES : CV_EN;
-    anchor.download = "Jose_Manuel_Tuberquia_Frontend_Developer";
+    anchor.download = `software_developer_jose_manuel_tuberquia_${language}`;
     anchor.click();
   };
 

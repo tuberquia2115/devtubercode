@@ -11,8 +11,8 @@ export const Summary = () => {
   } = portfolio.section_summary;
 
   return (
-    <section id="summary" className="bg-summary">
-      <div className="container">
+    <section id="summary" className={styles.bg_summary}>
+      <div className={styles.container}>
         <div className={styles.summary_main}>
           <p className={`text text-grey ${styles.hello}`}>
             {headerTaglineOne} {headerTaglineTwo}
@@ -24,13 +24,17 @@ export const Summary = () => {
             </p>
             <div className={styles.buttons}>
               <Button
+                aria-label="ver mis proyectos"
+                className={styles.button}
                 label="Ver mis proyectos"
-                variant="secondary"
+                variant="outlined"
                 onClick={() => (window.location.href = "#personal_projects")}
               />
               <Button
+                aria-label="Más sobre mí"
+                className={styles.button}
                 label="Más sobre mí"
-                variant="outlined"
+                variant="secondary"
                 onClick={() => (window.location.href = "#about")}
               />
             </div>

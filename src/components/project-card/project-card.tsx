@@ -12,7 +12,12 @@ type ProjectCard = {
 
 export const ProjectCard = (props: ProjectCard) => (
   <figure className={styles.container_figure}>
-    <a href={props.path} target="_black" rel="noopener noreferrer" />
+    <a
+      href={props.path}
+      target="_black"
+      rel="noopener noreferrer"
+      aria-label={props.description}
+    />
     <div className={styles.container_img}>
       <img src={props.url_banner} alt={`card-${props.name}`} />
     </div>
