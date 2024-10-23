@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--background);
+}
+
+.footer_main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_footer_navigation {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.container_footer_bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container_links {
+  margin-top: 1.75rem;
+}
+
+.container_link {
+  display: flex;
+  align-items: self-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
