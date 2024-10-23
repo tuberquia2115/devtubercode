@@ -1,0 +1,17 @@
+.container_header_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container_projects {
+  padding-top: 30px;
+
+  & figure {
+    background-color: var(--background);
+
+    &:hover {
+      background-color: rgb(50, 50, 50);
+    }
+  }
+}
