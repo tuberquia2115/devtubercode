@@ -19,7 +19,7 @@ export const Logo = (props: LogoProps) => {
             className={styles.container_img}
             style={{ width: props.size || 50, height: props.size || 50 }}
           >
-            <img src={src} alt={name} />
+            <img src={src} alt={name} loading="lazy" />
           </div>
           <p>{name}</p>
         </div>

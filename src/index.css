@@ -183,7 +183,7 @@ figure:hover img[alt^="card-"] {
 .bg-summary {
   background:
     linear-gradient(0deg, rgba(14, 42, 71, .8) 0%, rgba(24, 39, 47, 0.1) 100%),
-    url(/assets/banners/banner-profile.png);
+    url(/assets/banners/banner-profile.webp);
 
   height: 70vh;
   padding: 12rem 1rem !important;

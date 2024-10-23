@@ -1,7 +1,7 @@
 {
   "header": {
     "info_logo": {
-      "src": "/assets/logo.png",
+      "src": "/assets/logo.webp",
       "name": "DevTuberCode",
       "subLogan": "Software Developer"
     },
@@ -31,7 +31,7 @@
       {
         "name": "Casino en Chile",
         "description": "Mantener el sitio interno de apuestas (casino)  Este sitio es altamente escalable y se adhiere a los principios de código SOLID, con un fuerte énfasis en la experiencia del usuario (UX) Mis responsabilidades como desarrollador eran mantener actualizaciones de diseño continuas y optimización del rendimiento, asegurando una experiencia de usuario fluida y atractiva.",
-        "url_banner": "/assets/banners/banner-casinoenchile.png",
+        "url_banner": "/assets/banners/banner-casinoenchile.webp",
         "path": "https://skin2-latamwin.dev.andes-system.com/",
         "technologies_used": [
           "React",
@@ -53,7 +53,7 @@
       {
         "name": "Eyoma by Amplitudes",
         "description": "Eyoma es una aplicación que permite alquilar autos y hoteles, así como comprar boletos de trenes y vuelos. Es una aplicación móvil con un fuerte enfoque en la experiencia del usuario.",
-        "url_banner": "/assets/banners/banner-eyoma.png",
+        "url_banner": "/assets/banners/banner-eyoma.webp",
         "path": "https://www.amplitudes-business-travel.com/eyoma/",
         "technologies_used": [
           "React.js",
@@ -77,7 +77,7 @@
       {
         "name": "Hologram",
         "description": "Hologram es una aplicación de mensajería y billetera de credenciales verificables con verdaderas funciones de preservación de la privacidad.",
-        "url_banner": "/assets/banners/banner-hologram.png",
+        "url_banner": "/assets/banners/banner-hologram.webp",
         "path": "https://play.google.com/store/apps/details?id=io.twentysixty.mobileagent.m&pcampaignid=web_share",
         "technologies_used": [
           "React",
@@ -101,7 +101,7 @@
       {
         "name": "Uniclick by unififn",
         "description": "Uniclick es una plataforma financiera respaldada por UNIFIN que otorga créditos por hasta $2.5 millones de pesos para apoyar a las pequeñas y medianas empresas mexicanas. ",
-        "url_banner": "/assets/banners/banner-uniclick.png",
+        "url_banner": "/assets/banners/banner-uniclick.webp",
         "path": "https://www.uniclick.com.mx/",
         "technologies_used": [
           "React",
@@ -120,7 +120,7 @@
       {
         "name": "Shipal",
         "description": "Aplicación web resposive que permite gestionar los envíos nacionales e internacionales de las de pequeños y medianas empresas usando las mejores transportadoras del mercado.",
-        "url_banner": "/assets/banners/banner-shipal.png",
+        "url_banner": "/assets/banners/banner-shipal.webp",
         "path": "https://shipal.co/",
         "technologies_used": [
           "React",
@@ -142,7 +142,7 @@
       {
         "name": "PESV Y PLSV",
         "description": "PESV y PLSV es una plataforma que permite la creación de Plan estrategico de seguridad viual y Plan local se seguridad vial que se solita en el municipio de palmira - Colombia",
-        "url_banner": "/assets/banners/banner-pesv-plsv.png",
+        "url_banner": "/assets/banners/banner-pesv-plsv.webp",
         "path": "https://mipesv-1110d.web.app/auth/login/",
         "technologies_used": [
           "React",
@@ -168,7 +168,7 @@
     "title": "Acerca de mi 💫",
     "subtitle": "Un poco acerca de mi",
     "description": "<p>Desarrollador de software con más de 5 años de experiencia en aplicaciones web y móviles, especializado en tecnologías como <strong>React, Next.js, TypeScript, React Native, y GraphQL</strong>. Mi enfoque está en crear soluciones eficientes y escalables, con diseño centrado en el usuario, utilizando metodologías ágiles. Me apasiona el aprendizaje continuo, enfrentar nuevos desafíos y mejorar constantemente mis habilidades mientras colaboro en el desarrollo de productos innovadores y de alto impacto.</p>",
-    "profile_url": "/assets/profile.png"
+    "profile_url": "/assets/profile.webp"
   },
   "section_personal_projects": {
     "title": "Paginas webs 📎",
@@ -178,19 +178,19 @@
       {
         "name": "Gaby Blouses",
         "description": "Plataforma web, que permite la compra de productos, tambien cuenta con administración de los productos, ordenes y usuarios.",
-        "url_banner": "/assets/banners/banner-gaby-blouses.png",
+        "url_banner": "/assets/banners/banner-gaby-blouses.webp",
         "path": "https://gaby-blouses.netlify.app/"
       },
       {
         "name": "Wordle Game",
         "description": "Wordle Game es un juego, donde tienes 5 intento para adivinar la palabra escondida en 5 minutos.",
-        "url_banner": "/assets/banners/banner-wordle-game.png",
+        "url_banner": "/assets/banners/banner-wordle-game.webp",
         "path": "https://wordle-game-dev.netlify.app/"
       },
       {
         "name": "Fide Pastelitos",
         "description": "Fide pastelitos es una plataforma que permite visualizar pasteles.",
-        "url_banner": "/assets/banners/banner-fide-pastelitos.png",
+        "url_banner": "/assets/banners/banner-fide-pastelitos.webp",
         "path": "https://web-pasteleria-56444.web.app/"
       }
     ]
