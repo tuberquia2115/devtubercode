@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 520px;
+  max-width: 600px;
 
   & .hello {
-    font-size: 2rem;
+    font-size: xx-large;
   }
 
   & .container_desc_btns {
@@ -15,7 +15,7 @@
   }
 
   & .description_summary {
-    font-size: 1.25rem;
+    font-size: larger;
   }
 }
 

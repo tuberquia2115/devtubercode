@@ -3,22 +3,36 @@ import { Button } from "@/components/UI";
 import styles from "./summary.module.css";
 
 export const Summary = () => {
+  const {
+    headerTaglineOne,
+    headerTaglineTwo,
+    headerTaglineThree,
+    headerTaglineFour,
+  } = portfolio.section_summary;
+
   return (
-    <section className="bg-summary">
+    <section id="summary" className="bg-summary">
       <div className="container">
         <div className={styles.summary_main}>
-          <p className={`text text-gray ${styles.hello}`}>
-            {portfolio.headerTaglineOne} {portfolio.headerTaglineTwo}
+          <p className={`text text-grey ${styles.hello}`}>
+            {headerTaglineOne} {headerTaglineTwo}
           </p>
-          <h2 className="text text-h1">{portfolio.headerTaglineThree}</h2>
-
+          <h2 className="text text-h1">{headerTaglineThree}</h2>
           <div className={styles.container_desc_btns}>
-            <p className={`text text-gray ${styles.description_summary}`}>
-              {portfolio.headerTaglineFour}
+            <p className={`text text-grey ${styles.description_summary}`}>
+              {headerTaglineFour}
             </p>
             <div className={styles.buttons}>
-              <Button label="Ver mis proyectos" variant="secondary" />
-              <Button label="Más sobre mí" variant="outlined" />
+              <Button
+                label="Ver mis proyectos"
+                variant="secondary"
+                onClick={() => (window.location.href = "#personal_projects")}
+              />
+              <Button
+                label="Más sobre mí"
+                variant="outlined"
+                onClick={() => (window.location.href = "#about")}
+              />
             </div>
           </div>
         </div>
