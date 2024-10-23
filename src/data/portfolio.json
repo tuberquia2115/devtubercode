@@ -1,16 +1,30 @@
 {
-  "name": "Jose Manuel",
-  "headerTaglineOne": "Hola 👋",
-  "headerTaglineTwo": "Soy Jose Manuel",
-  "headerTaglineThree": "Frontend Developer",
-  "headerTaglineFour": "Comparto mi conocimiento en desarrollo de software con el propósito de ayudar a personas y marcas a cumplir sus objetivos digitales, proporcionando soluciones efectivas para las necesidades de los usuarios.",
-  "navigation": [
-    { "id": 1, "label": "Proyectos", "path": "#projects" },
-    { "id": 2, "label": "Acerca de mí", "path": "#about" },
-    { "id": 3, "label": "Contacto", "path": "#contact" }
-  ],
+  "header": {
+    "info_logo": {
+      "src": "/assets/logo.png",
+      "name": "DevTuberCode",
+      "subLogan": "Software Developer"
+    },
+    "navigation": [
+      { "id": 1, "label": "Experiencia", "path": "#projects" },
+      {
+        "id": 2,
+        "label": "Proyectos Personales",
+        "path": "#personal_projects"
+      },
+      { "id": 3, "label": "Acerca de mí", "path": "#about" },
+      { "id": 4, "label": "Contacto", "path": "#contact" }
+    ]
+  },
+  "section_summary": {
+    "headerTaglineOne": "Hola 👋",
+    "headerTaglineTwo": "Soy Jose Manuel",
+    "headerTaglineThree": "Frontend Developer",
+    "headerTaglineFour": "Comparto mi conocimiento en desarrollo de software con el propósito de ayudar a personas y marcas a cumplir sus objetivos digitales, proporcionando soluciones efectivas para las necesidades de los usuarios."
+  },
+
   "section_projects": {
-    "title": "Mis proyectos 👨‍💻",
+    "title": "Experiencia 👨‍💻",
     "subtitle": "Proyectos en los que he trabajado.",
     "description": "Desarrollo de aplicaciones web y móviles con interfaces atractivas y usabilidad intuitiva, centradas en la experiencia del usuario.",
     "projects": [
@@ -153,7 +167,115 @@
   "section_aboutme": {
     "title": "Acerca de mi 💫",
     "subtitle": "Un poco acerca de mi",
-    "description": "Desarrollador de software con enfoque en el desarrollo de aplicaciones webs y mobiles,  con más de 5 años de experiencia, me encanta la programación, me apasiona el aprendizaje continuo, enfrentar nuevos retos, compartir mis conocimientos y seguir aprendiendo, he contribuido al desarrollo de aplicaciones web y móviles que me han permitido ganar experiencia en el ",
+    "description": "<p>Desarrollador de software con más de 5 años de experiencia en aplicaciones web y móviles, especializado en tecnologías como <strong>React, Next.js, TypeScript, React Native, y GraphQL</strong>. Mi enfoque está en crear soluciones eficientes y escalables, con diseño centrado en el usuario, utilizando metodologías ágiles. Me apasiona el aprendizaje continuo, enfrentar nuevos desafíos y mejorar constantemente mis habilidades mientras colaboro en el desarrollo de productos innovadores y de alto impacto.</p>",
     "profile_url": "/assets/profile.png"
+  },
+  "section_personal_projects": {
+    "title": "Paginas webs 📎",
+    "subtitle": "Proyectos Personales",
+    "description": "<p>Esta sección presenta proyectos personales que muestran mis habilidades en desarrollo web y móvil, utilizando tecnologías como <strong>Next.js, React, TypeScript, Vite.js, Tailwind CSS, y React Native.</strong> He creado aplicaciones modernas, eficientes y con diseño responsive, y también he trabajado con <strong>GraphQL</strong> para optimizar la gestión de datos. Los proyectos abarcan desde aplicaciones web interactivas hasta soluciones móviles robustas, priorizando la experiencia del usuario y el rendimiento.</p>",
+    "projects": [
+      {
+        "name": "Gaby Blouses",
+        "description": "Plataforma web, que permite la compra de productos, tambien cuenta con administración de los productos, ordenes y usuarios.",
+        "url_banner": "/assets/banners/banner-gaby-blouses.png",
+        "path": "https://gaby-blouses.netlify.app/"
+      },
+      {
+        "name": "Wordle Game",
+        "description": "Wordle Game es un juego, donde tienes 5 intento para adivinar la palabra escondida en 5 minutos.",
+        "url_banner": "/assets/banners/banner-wordle-game.png",
+        "path": "https://wordle-game-dev.netlify.app/"
+      },
+      {
+        "name": "Fide Pastelitos",
+        "description": "Fide pastelitos es una plataforma que permite visualizar pasteles.",
+        "url_banner": "/assets/banners/banner-fide-pastelitos.png",
+        "path": "https://web-pasteleria-56444.web.app/"
+      }
+    ]
+  },
+  "section_contact": {
+    "title": "¿Tienes alguna pregunta? 😃",
+    "subtitle": "Ponte en contacto",
+    "available": true,
+    "available_message": "Actualmente, estoy abierto a explorar nuevas oportunidades profesionales.",
+    "description_one": "Me encantaria ayudarte en tu nuevo proyecto.",
+    "description_two": "Por favor, no dude en ponerse en contacto conmigo. Estaré encantado de recibir su mensaje.",
+    "contacts_media": [
+      {
+        "title": "email",
+        "label": "tuberquia2115@gmail.com",
+        "value": "https://mail.google.com/mail/?view=cm&fs=1&to=tuberquia2115@gmail.com"
+      },
+      {
+        "title": "linkedin",
+        "label": "Linkedin/in/tuberquia",
+        "value": "https://www.linkedin.com/in/josemanuelgracianotuberquia/"
+      }
+    ]
+  },
+  "footer": {
+    "bottom": {
+      "copy_right": "Todos los derechos reservados.",
+      "done_message": "Desarrollado con ❤️ en colombia.",
+      "create_by": "Creado por devTuberCode con CSS MODULE."
+    },
+    "linkList": [
+      {
+        "title": "Accesos rápidos",
+        "links": [
+          { "label": "Experiencia", "url": "#projects" },
+          {
+            "label": "Proyectos Personales",
+            "url": "#personal_projects"
+          },
+          { "label": "Acerca de mí", "url": "#about" },
+          { "label": "Contacto", "url": "#contact" }
+        ]
+      },
+      {
+        "title": "Sigueme",
+        "links": [
+          {
+            "label": "Github",
+            "url": "https://github.com/tuberquia2115",
+            "icon": "github"
+          },
+          {
+            "label": "Gitlab",
+            "url": "https://gitlab.com/tuberquia2115",
+            "icon": "gitlab"
+          },
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/josemanuelgracianotuberquia/",
+            "icon": "linkedin"
+          },
+          {
+            "label": "StackOverflow",
+            "url": "https://stackoverflow.com/users/17255400/jose-manuel-tuberquia",
+            "icon": "stackOverflow"
+          }
+        ]
+      },
+      {
+        "title": "Proyectos 👨‍💻",
+        "links": [
+          {
+            "label": "Gaby Blouses",
+            "url": "https://gaby-blouses.netlify.app/"
+          },
+          {
+            "label": "Wordle Game",
+            "url": "https://wordle-game-dev.netlify.app/"
+          },
+          {
+            "label": "Pastelitos Fide",
+            "url": "https://web-pasteleria-56444.web.app/"
+          }
+        ]
+      }
+    ]
   }
 }
