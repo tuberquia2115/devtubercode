@@ -1,0 +1,62 @@
+.container_description {
+  & p {
+    margin-block: 20px;
+  }
+}
+
+.container_buttons {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.href {
+  position: absolute;
+  inset: 0px;
+}
+
+.btn_hover_email {
+  &:hover {
+    background-color: var(--info);
+    transform: scale(1.02);
+  }
+}
+
+.btn_hover_linkedin {
+  &:hover {
+    background-color: var(--color-four);
+    transform: scale(1.02);
+  }
+}
+
+.container_button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: 300ms;
+  color: var(--text);
+
+  background-color: var(--primary);
+  border: 2px solid var(--text);
+  position: relative;
+  font-size: medium;
+}
+
+.container_labels {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: medium;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_buttons {}
+
+  .container_button {
+    width: 100%;
+  }
+
+}
