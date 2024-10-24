@@ -13,7 +13,7 @@ export const Logo = (props: LogoProps) => {
       className={styles.container}
       style={{ gap: props.withLogan ? "16px" : 0 }}
     >
-      <a href="summary">
+      <a href="#summary" aria-label="logo app">
         <div className={styles.container_logo}>
           <div
             className={styles.container_img}
