@@ -36,24 +36,20 @@
   align-items: center;
   transition: 300ms;
   color: var(--text);
-
   background-color: var(--primary);
   border: 2px solid var(--text);
   position: relative;
-  font-size: medium;
 }
 
 .container_labels {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: medium;
   flex-wrap: wrap;
   text-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {
-  .container_buttons {}
 
   .container_button {
     width: 100%;

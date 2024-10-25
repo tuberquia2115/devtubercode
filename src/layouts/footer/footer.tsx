@@ -35,7 +35,7 @@ export const Footer = () => {
           <div className={styles.container_footer_navigation}>
             {portfolio.footer.linkList.map(({ title, links }) => (
               <div key={title}>
-                <h1>{title}</h1>
+                <h1 className="text-h2">{title}</h1>
                 <Divider height={2} color="var(--secondary)" />
                 <ul className={styles.container_links}>
                   {(links as LinkType[]).map((link) => (

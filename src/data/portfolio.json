@@ -13,7 +13,7 @@
         "path": "#personal_projects"
       },
       { "id": 3, "label": "Acerca de mí", "path": "#about" },
-      { "id": 4, "label": "Contacto", "path": "#contact" }
+      { "id": 4, "label": "Contactame", "path": "#contact" }
     ]
   },
   "section_summary": {

@@ -29,6 +29,7 @@
   --info: #D34645;
   --text: rgba(221, 221, 221, 0.8666666667);
   --color-green: #00FF85;
+  --font-size: 17px
 }
 
 * {
@@ -61,7 +62,7 @@ button:focus-visible {
 }
 
 body {
-  font-size: 17px;
+  font-size: var(--font-size);
   width: 100%;
   background: linear-gradient(180deg, var(--background), var(--primary));
 
@@ -161,6 +162,10 @@ figure:hover img[alt^="card-"] {
   font-family: Poppins, sans-serif;
 }
 
+.text-medium {
+  font-size: 2rem;
+}
+
 .text-h1 {
   font-size: 3rem;
 }
@@ -168,7 +173,6 @@ figure:hover img[alt^="card-"] {
 .text-h2 {
   font-size: 2rem;
 }
-
 
 .text-green {
   color: var(--color-green);
@@ -182,6 +186,14 @@ figure:hover img[alt^="card-"] {
 }
 
 @media only screen and (max-width: 768px) {
+
+  :root {
+    --font-size: 15px
+  }
+
+  .text-medium {
+    font-size: 1.5rem;
+  }
 
   .text-h1 {
     font-size: xx-large;

@@ -22,7 +22,7 @@ export const ProjectCard = (props: ProjectCard) => (
       <img src={props.url_banner} alt={`card-${props.name}`} />
     </div>
     <figcaption className={styles.figcaption}>
-      <h3>{props.name}</h3>
+      <h3 className="text-h2">{props.name}</h3>
       <p>{props.description}</p>
       {props.technologies_used && (
         <div className={styles.container_chips}>

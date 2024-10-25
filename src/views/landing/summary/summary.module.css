@@ -26,9 +26,7 @@
   gap: 10px;
   max-width: 600px;
 
-  & .hello {
-    font-size: xx-large;
-  }
+
 
   & .container_desc_btns {
     display: flex;
@@ -36,9 +34,7 @@
     gap: 1rem;
   }
 
-  & .description_summary {
-    font-size: larger;
-  }
+
 }
 
 .buttons {

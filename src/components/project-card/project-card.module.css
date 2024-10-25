@@ -2,8 +2,12 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  background-color: var(--primary);
+  background-color: rgba(24, 39, 47, 0.3);
   transition: 0.2s ease-out;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px var(--background);
+
+
 
   & a {
     position: absolute;
@@ -31,10 +35,6 @@
   flex-direction: column;
   padding: 1rem;
   gap: 8px;
-
-  & h3 {
-    font-size: 1.5rem;
-  }
 
   & p {
     color: var(--text);
