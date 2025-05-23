@@ -19,7 +19,7 @@ export const ProjectCard = (props: ProjectCard) => (
       aria-label={props.description}
     />
     <div className={styles.container_img}>
-      <img src={props.url_banner} alt={`card-${props.name}`} />
+      <img src={props.url_banner} alt={`card-${props.name}`} loading="lazy" />
     </div>
     <figcaption className={styles.figcaption}>
       <h3 className="text-h2">{props.name}</h3>
