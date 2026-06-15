@@ -1,0 +1,40 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "download": "Download",
+    "language": "Language",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "hero": {
+    "eyebrow": "Available for freelance projects",
+    "viewProjects": "View experience",
+    "viewServices": "Services",
+    "contactMe": "Let's talk",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Projects delivered",
+      "focus": "Web and mobile"
+    }
+  },
+  "projectCard": {
+    "viewLess": "Show less",
+    "viewMore": "Read more",
+    "viewProject": "View project {{name}}"
+  },
+  "cv": {
+    "openSpanish": "Ver CV en español",
+    "openEnglish": "View English CV",
+    "modalTitle": "CV preview",
+    "downloadSpanish": "Descargar CV ES",
+    "downloadEnglish": "Download CV EN",
+    "viewerTitle": "Jose Manuel Tuberquia CV PDF"
+  },
+  "aria": {
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "selectSpanish": "Switch language to Spanish",
+    "selectEnglish": "Switch language to English"
+  }
+}
