@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import { Footer, Header } from "@/layouts";
 import { Summary } from "./landing";
 
@@ -13,6 +14,11 @@ const AboutMe = lazy(() =>
     default: module.AboutMe,
   }))
 );
+const Services = lazy(() =>
+  import("./landing/services/services").then((module) => ({
+    default: module.Services,
+  }))
+);
 const PersonalProjects = lazy(() =>
   import("./landing/personal-projects/personal-projects").then((module) => ({
     default: module.PersonalProjects,
@@ -24,24 +30,32 @@ const Contact = lazy(() =>
   }))
 );
 
-export const Main = () => (
-  <main>
-    <Header />
-    <article>
-      <Summary />
-      <Suspense fallback={<p>Loading...</p>}>
-        <Projects />
-      </Suspense>
-      <Suspense fallback={<p>Loading...</p>}>
-        <AboutMe />
-      </Suspense>
-      <Suspense fallback={<p>Loading...</p>}>
-        <PersonalProjects />
-      </Suspense>
-      <Suspense fallback={<p>Loading...</p>}>
-        <Contact />
-      </Suspense>
-    </article>
-    <Footer />
-  </main>
-);
+export const Main = () => {
+  const { t } = useTranslation();
+  const fallback = <p className="container">{t("common.loading")}</p>;
+
+  return (
+    <main>
+      <Header />
+      <article>
+        <Summary />
+        <Suspense fallback={fallback}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={fallback}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={fallback}>
+          <AboutMe />
+        </Suspense>
+        <Suspense fallback={fallback}>
+          <PersonalProjects />
+        </Suspense>
+        <Suspense fallback={fallback}>
+          <Contact />
+        </Suspense>
+      </article>
+      <Footer />
+    </main>
+  );
+};

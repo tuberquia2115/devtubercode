@@ -7,20 +7,21 @@
     },
     "navigation": [
       { "id": 1, "label": "Experiencia", "path": "#projects" },
+      { "id": 2, "label": "Servicios", "path": "#services" },
       {
-        "id": 2,
+        "id": 3,
         "label": "Proyectos Personales",
         "path": "#personal_projects"
       },
-      { "id": 3, "label": "Acerca de mí", "path": "#about" },
-      { "id": 4, "label": "Contactame", "path": "#contact" }
+      { "id": 4, "label": "Acerca de mí", "path": "#about" },
+      { "id": 5, "label": "Contactame", "path": "#contact" }
     ]
   },
   "section_summary": {
-    "headerTaglineOne": "Hola 👋",
+    "headerTaglineOne": "¿Listo para llevar tu idea al siguiente nivel?",
     "headerTaglineTwo": "Soy Jose Manuel",
-    "headerTaglineThree": "Frontend Developer",
-    "headerTaglineFour": "Comparto mi conocimiento en desarrollo de software con el propósito de ayudar a personas y marcas a cumplir sus objetivos digitales, proporcionando soluciones efectivas para las necesidades de los usuarios."
+    "headerTaglineThree": "Frontend & Mobile Developer",
+    "headerTaglineFour": "Diseño y construyo experiencias web y móviles modernas con React, TypeScript y React Native, enfocadas en rendimiento, usabilidad y resultados reales para usuarios, marcas y productos digitales."
   },
 
   "section_projects": {
@@ -217,6 +218,39 @@
     "description": "<p>Desarrollador de software con más de 5 años de experiencia en aplicaciones web y móviles, especializado en tecnologías como <strong>React, Next.js, TypeScript, React Native, y GraphQL</strong>. Mi enfoque está en crear soluciones eficientes y escalables, con diseño centrado en el usuario, utilizando metodologías ágiles. Me apasiona el aprendizaje continuo, enfrentar nuevos desafíos y mejorar constantemente mis habilidades mientras colaboro en el desarrollo de productos innovadores y de alto impacto.</p>",
     "profile_url": "/assets/profile.webp"
   },
+  "section_services": {
+    "title": "Servicios freelance ⚡",
+    "subtitle": "Construyo experiencias web y mobile que ayudan a vender, operar y crecer.",
+    "description": "Puedo acompañarte desde la idea hasta una versión lista para usuarios, con foco en interfaces claras, rendimiento, mantenibilidad y una experiencia que se sienta profesional desde el primer clic.",
+    "cta": "Conversemos sobre tu proyecto",
+    "services": [
+      {
+        "title": "Landing pages y sitios profesionales",
+        "description": "Diseños modernos, responsivos y optimizados para presentar tu marca, captar clientes y comunicar tu propuesta con claridad.",
+        "icon": "layout"
+      },
+      {
+        "title": "Aplicaciones web",
+        "description": "Desarrollo frontend con React, Next.js, Vite y TypeScript para productos escalables, rápidos y fáciles de mantener.",
+        "icon": "code"
+      },
+      {
+        "title": "Aplicaciones móviles",
+        "description": "Apps con React Native y Expo, cuidando navegación, estados, formularios, rendimiento y experiencia de usuario.",
+        "icon": "smartphone"
+      },
+      {
+        "title": "UX, performance y responsive",
+        "description": "Mejoras de usabilidad, accesibilidad, velocidad de carga y adaptación mobile para productos existentes.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Mantenimiento y soporte evolutivo",
+        "description": "Corrección de errores, nuevas funcionalidades, refactorización y acompañamiento técnico para que tu producto siga creciendo.",
+        "icon": "wrench"
+      }
+    ]
+  },
   "section_personal_projects": {
     "title": "Paginas webs 📎",
     "subtitle": "Proyectos Personales",
@@ -259,6 +293,11 @@
         "title": "linkedin",
         "label": "Linkedin/in/tuberquia",
         "value": "https://www.linkedin.com/in/josemanuelgracianotuberquia/"
+      },
+      {
+        "title": "whatsapp",
+        "label": "WhatsApp +57 317 426 3716",
+        "value": "https://wa.me/573174263716?text=Hola%20Jose%20Manuel%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo%20sobre%20un%20proyecto."
       }
     ]
   },
@@ -273,6 +312,7 @@
         "title": "Accesos rápidos",
         "links": [
           { "label": "Experiencia", "url": "#projects" },
+          { "label": "Servicios", "url": "#services" },
           {
             "label": "Proyectos Personales",
             "url": "#personal_projects"
