@@ -29,6 +29,53 @@
     "description": "Desarrollo de aplicaciones web y móviles con interfaces atractivas y usabilidad intuitiva, centradas en la experiencia del usuario.",
     "projects": [
       {
+        "name": "Rivals",
+        "description": "<p><strong>Rivals</strong> es una aplicación móvil multi-deporte para la creación y gestión de equipos deportivos. Los usuarios se registran, crean un perfil o equipo en uno de 7 deportes (Fútbol 7, Fútbol 11, Basketball, Volleyball, Pádel, Boxeo y Tenis), y acceden a un shell principal con navegación por tabs y drawer para buscar rivales, gestionar partidos, ver standings y administrar su perfil.</p><h4>Mi aporte como Software Mobile</h4><p>Lideré el desarrollo frontend mobile completo, desde la arquitectura base hasta el envío de builds. Mis principales entregas incluyen:</p><ul><li><strong>Autenticación y onboarding:</strong> flujo de registro/login, verificación por email, OTP vía WhatsApp, recuperación de contraseña y guards de autenticación en Expo Router.</li><li><strong>Creación de equipos:</strong> onboarding por deporte con formularios dinámicos, validaciones con Zod y persistencia en Firestore.</li><li><strong>Perfil de usuario:</strong> edición de datos, cambio de contraseña, cambio de email y cambio de teléfono con OTP.</li><li><strong>Perfil de equipo:</strong> visualización propia y pública, edición de datos deportivos, selector de temporada, historial de partidos, desafíos a otros equipos y gestión de resultados.</li><li><strong>Búsqueda de rivales:</strong> listado con filtros avanzados por región, comuna, centro deportivo, nivel, fair play, puntualidad, edad y filtros especiales para Pádel; persistencia local de filtros.</li><li><strong>Match Center:</strong> fixture de próximos partidos, partidos recientes con paginación, agrupación por día y filtros por comuna.</li><li><strong>Standings:</strong> tabla de posiciones con temporadas, ordenamiento, métricas adaptadas por deporte y resaltado del equipo activo.</li><li><strong>Health Test:</strong> modal obligatorio con formulario de salud, declaración de responsabilidad y envío por Cloud Function.</li><li><strong>Sistema de diseño:</strong> tokens de colores, spacing, radius, typography y shadows con soporte dark/light, más componentes compartidos reutilizables.</li><li><strong>Internacionalización:</strong> soporte completo en español, portugués e inglés.</li><li><strong>Configuración de builds:</strong> perfiles de EAS para development, preview y production en Android e iOS, incluyendo builds locales y dev client.</li></ul><h4>Destacados técnicos</h4><ul><li><strong>Arquitectura Feature-First + Composition:</strong> organicé el código por dominio en <strong>src/features/</strong>, manteniendo las rutas de Expo Router delgadas y la lógica de negocio aislada en servicios, hooks y componentes reutilizables.</li><li><strong>Navegación condicional compleja:</strong> implementé guards de autenticación, redirección a onboarding de equipo obligatorio y modales de health test desde el layout principal.</li><li><strong>Manejo de estado sin librerías externas:</strong> diseñé contextos globales con suscripciones en tiempo real a Firestore para equipos, cuenta de usuario y clubs.</li><li><strong>Formularios escalables:</strong> implementé formularios multi-paso y condicionales con React Hook Form + Zod, incluyendo validaciones por deporte y campos dinámicos.</li><li><strong>Animaciones y UX:</strong> usé react-native-reanimated y react-native-gesture-handler para animaciones suaves, manejo del teclado y experiencias de carga con skeletons.</li><li><strong>Builds y distribución:</strong> configuré EAS para preview/production en Android e iOS, builds locales sin cola y dev client para desarrollo ágil.</li><li><strong>Clean code y mantenibilidad:</strong> refactorización continua, extracción de componentes compartidos, normalización de imports y documentación de arquitectura en el repo.</li> </ul>",
+        "url_banner": "/assets/banners/banner-rivals.webp",
+        "technologies_used": [
+          "Expo SDK 54",
+          "React Native 0.81.5",
+          "TypeScript 5.9",
+          "Expo Router 6",
+          "Firebase",
+          "React Hook Form",
+          "Zod",
+          "React Context",
+          "React Native Reanimated",
+          "expo-image",
+          "expo-image-picker",
+          "i18n-js",
+          "expo-localization",
+          "AsyncStorage",
+          "EAS Build",
+          "Expo Dev Client"
+        ]
+      },
+      {
+        "name": "Abastella",
+        "description": "<p><strong>Abastella Restaurantes</strong> es una plataforma web de gestión operativa y financiera dirigida a restaurantes. Centraliza la administración de compras, facturas de proveedores, inventarios, recetas, costos de materia prima, pagos y reportes de inteligencia de negocio, conectando la operación diaria del restaurante con análisis de datos en tiempo real.</p><h4>Mi aporte como desarrollador frontend</h4><p>Diseñé y construí interfaces complejas sobre una arquitectura serverless con Firebase, abarcando módulos clave de la aplicación:</p><ul><li><strong>Facturas y compras:</strong> listado con filtros avanzados, selección masiva, acciones batch, sincronización controlada con el SII y detalle de facturas con recepción manual y carga de documentos.</li><li><strong>Gestión de pagos:</strong> tablero de vencimientos con estados de pago, acciones masivas y descarga de comprobantes.</li><li><strong>Inventario:</strong> conteos de inventario, agrupación de conteos, detalle con totalización y solicitudes de traspaso entre sucursales.</li><li><strong>Ingredientes, recetas y productos a la venta:</strong> catálogo de ingredientes con importación/exportación masiva, creación de recetas, edición de productos y registro de pérdidas.</li><li><strong>Reportes:</strong> integración de dashboards de Looker Studio con filtros dinámicos, además de reportes nativos de materia prima, potencial de ahorro, lista de precios y compras.</li><li><strong>Panel de administración:</strong> herramientas internas para gestionar restaurantes, enviar notificaciones masivas, diagnosticar XML y resolver dudas de homologación.</li><li><strong>Configuración y onboarding:</strong> flujos de registro, creación de restaurante, gestión de sucursales, cuentas, integraciones (SII, Toteat, Odoo) y métodos de pago.</li></ul><h4>Destacados técnicos</h4><ul><li>Implementé tablas interactivas con TanStack Table, incluyendo selección persistente, filtros por columna y acciones masivas.</li><li>Desarrollé exportación a Excel parametrizable, con formatos de moneda y reportes de múltiples hojas.</li><li>Construí validaciones robustas de formularios con react-hook-form + Zod.</li><li>Gestioné estados de sincronización con cooldowns y recuperación de estado al volver a la pestaña.</li><li>Integré reportes embebidos de Looker Studio, soporte vía Intercom y análisis de comportamiento con Hotjar.</li><li>Apliqué Atomic Design para organizar componentes y mantener una interfaz escalable y consistente.</li></ul>",
+        "url_banner": "/assets/banners/banner-abastella.webp",
+        "path": "https://abastella.com",
+        "technologies_used": [
+          "Vite",
+          "TailwindCSS",
+          "shadcn/ui",
+          "Radix UI",
+          "Firebase (Auth, Firestore, Functions, Storage)",
+          "react-hook-form",
+          "Zod",
+          "TanStack Table",
+          "react-router-dom",
+          "Looker Studio",
+          "Intercom",
+          "Hotjar",
+          "React",
+          "TypeScript",
+          "Hooks"
+        ]
+      },
+
+      {
         "name": "Casino en Chile",
         "description": "Mantener el sitio interno de apuestas (casino)  Este sitio es altamente escalable y se adhiere a los principios de código SOLID, con un fuerte énfasis en la experiencia del usuario (UX) Mis responsabilidades como desarrollador eran mantener actualizaciones de diseño continuas y optimización del rendimiento, asegurando una experiencia de usuario fluida y atractiva.",
         "url_banner": "/assets/banners/banner-casinoenchile.webp",

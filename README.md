@@ -1,49 +1,224 @@
-## About Me
+# DevTuberCode Portfolio
 
-![Developer Name](./assets/images/profile_photo.jpg)
+Portafolio personal desarrollado como una SPA con Vite, React 18 y TypeScript. El sitio presenta experiencia profesional, proyectos personales, información sobre el desarrollador y canales de contacto, alimentándose principalmente desde un archivo JSON estático.
 
-A highly motivated and results-oriented Senior Software Developer with over 5 years of experience in designing, developing, and deploying robust web and mobile applications. I thrive in collaborative environments and am passionate about leveraging cutting-edge technologies to build innovative solutions that solve real-world problems.
+## Stack principal
 
-My expertise spans the full software development lifecycle, from conceptualization and design to implementation, testing, and ongoing maintenance. I am adept at translating complex requirements into scalable and user-friendly applications.
+- React 18
+- TypeScript
+- Vite
+- CSS Modules
+- ESLint
+- pnpm
+- CodeGraph para análisis local del código
 
-### Key Skills & Technologies:
+## Requisitos
 
-*   **Frontend:** JavaScript (ES6+), TypeScript, React, Angular, Vue.js, HTML5, CSS3, SASS/LESS
-*   **Backend:** Node.js, Python (Django/Flask), Java (Spring Boot), Ruby on Rails
-*   **Mobile:** React Native, Flutter, Swift (iOS), Kotlin (Android)
-*   **Databases:** PostgreSQL, MySQL, MongoDB, Firebase
-*   **DevOps & Cloud:** Docker, Kubernetes, AWS, Azure, GCP, CI/CD pipelines
-*   **Methodologies:** Agile, Scrum, Kanban
+- Node.js compatible con el proyecto
+- pnpm `9.1.2`
 
-### Achievements:
+El repositorio declara el gestor en `package.json`:
 
-*   Successfully led the development of several high-impact projects, consistently delivering them on time and within budget.
-*   Architected and implemented scalable backend systems for web and mobile applications, significantly improving performance and reliability.
-*   Contributed to a 20% reduction in app load times by optimizing frontend code and implementing efficient data fetching strategies.
-*   Mentored junior developers, fostering a culture of learning and continuous improvement within the team.
-*   Passionate about writing clean, maintainable, and well-tested code.
+```json
+"packageManager": "pnpm@9.1.2"
+```
 
-I'm always eager to take on new challenges and contribute to impactful projects. Feel free to reach out if you'd like to connect or collaborate!
+## Comandos
 
----
+```bash
+pnpm dev
+```
 
-*Looking for my project repositories? You'll find them pinned below!*
+Inicia el servidor de desarrollo de Vite.
 
----
+```bash
+pnpm build
+```
 
-## Portfolio Highlights
+Ejecuta `tsc -b` y genera el build de producción con Vite.
 
-This section showcases a selection of my work, including full-stack web applications, cross-platform mobile apps, and personal projects that demonstrate my passion for software development and problem-solving. You'll find a mix of client-focused solutions and independent explorations of new technologies.
+```bash
+pnpm lint
+```
 
-### Project Screenshots
+Ejecuta ESLint sobre el repositorio.
 
-Here are a few visual examples of my projects:
+```bash
+pnpm preview
+```
 
-![Project Alpha Screenshot](./assets/images/project_alpha.png "Project Alpha")
-*Caption for Project Alpha: Briefly describe the project or the view shown.*
+Previsualiza el build de producción.
 
-![Project Beta Screenshot](./assets/images/project_beta.png "Project Beta")
-*Caption for Project Beta: Briefly describe the project or the view shown.*
+```bash
+pnpm clean
+```
 
-![Project Gamma Screenshot](./assets/images/project_gamma.png "Project Gamma")
-*Caption for Project Gamma: Briefly describe the project or the view shown.*
+Elimina `node_modules`.
+
+## Estructura del proyecto
+
+```text
+src/
+  main.tsx                     Punto de entrada de React
+  App.tsx                      Componente raíz
+  index.css                    Estilos globales y tokens de diseño
+  data/
+    portfolio.json             Contenido estático del portafolio
+  layouts/
+    header/                    Header desktop
+    header-nav-mobile/         Navegación móvil
+    footer/                    Footer
+  views/
+    main.tsx                   Composición de secciones con lazy loading
+    landing/
+      summary/                 Hero/resumen inicial
+      projects/                Experiencia profesional
+      personal-projects/       Proyectos personales
+      about-me/                Acerca de mí
+      contact/                 Contacto
+  components/
+    UI/                        Button, Chip y Divider
+    icons/                     Iconos SVG reutilizables
+    logo/                      Logo del sitio
+    project-card/              Tarjeta reutilizable para proyectos
+
+public/
+  assets/
+    banners/                   Banners de proyectos
+    cv-es.pdf                  CV en español
+    cv-en.pdf                  CV en inglés
+    logo.webp
+    profile.webp
+```
+
+## Arquitectura
+
+CodeGraph indexó el proyecto con 45 archivos, 143 nodos y 164 relaciones. El análisis muestra una arquitectura pequeña y directa:
+
+- `src/main.tsx` monta `App`.
+- `src/App.tsx` renderiza la vista principal.
+- `src/views/main.tsx` compone la landing y usa `React.lazy` para cargar secciones debajo de `Summary`.
+- Las secciones consumen contenido desde `src/data/portfolio.json`.
+- `ProjectCard` se reutiliza tanto en experiencia profesional como en proyectos personales.
+- Los estilos de componentes viven en CSS Modules y los tokens/estilos compartidos viven en `src/index.css`.
+
+## Flujo de datos
+
+El contenido editable del portafolio vive en `src/data/portfolio.json`.
+
+Desde ahí se alimentan:
+
+- navegación del header y menú móvil;
+- textos del resumen inicial;
+- experiencia profesional en `section_projects`;
+- proyectos personales en `section_personal_projects`;
+- sección "Acerca de mí";
+- datos de contacto;
+- enlaces del footer.
+
+Para agregar o modificar contenido visible en el sitio, lo recomendado es actualizar `portfolio.json` antes de tocar componentes.
+
+## Tarjetas de proyecto
+
+`src/components/project-card/project-card.tsx` renderiza cada proyecto con:
+
+- banner;
+- nombre;
+- descripción con HTML mediante `dangerouslySetInnerHTML`;
+- botón desplegable para descripciones largas;
+- chips de tecnologías.
+
+Las descripciones pueden usar etiquetas HTML como:
+
+- `p`
+- `strong`
+- `a`
+- `h1` a `h6`
+- `ul`, `ol` y `li`
+
+Los estilos globales para esas etiquetas están definidos bajo `.project-description` en `src/index.css`, de modo que todas las tarjetas mantengan una presentación consistente.
+
+## Assets
+
+Los recursos públicos están en `public/assets/`.
+
+Los banners de proyectos se referencian desde `portfolio.json` con rutas como:
+
+```json
+"/assets/banners/banner-rivals.webp"
+```
+
+Los CVs disponibles son:
+
+- `public/assets/cv-es.pdf`
+- `public/assets/cv-en.pdf`
+
+## CodeGraph
+
+El proyecto fue inicializado e indexado con [CodeGraph](https://github.com/colbymchenry/codegraph).
+
+Archivos creados:
+
+```text
+.codegraph/
+  config.json
+  .gitignore
+  codegraph.db
+```
+
+La base de datos `codegraph.db` es local y queda ignorada por `.codegraph/.gitignore`.
+
+Comandos útiles:
+
+```bash
+codegraph status .
+```
+
+Muestra el estado del índice.
+
+```bash
+codegraph index .
+```
+
+Reconstruye el índice del proyecto.
+
+```bash
+codegraph files
+```
+
+Lista la estructura indexada.
+
+```bash
+codegraph query ProjectCard
+```
+
+Busca símbolos o imports dentro del índice.
+
+```bash
+codegraph context "Explica la arquitectura del portafolio"
+```
+
+Genera contexto en Markdown para una pregunta concreta sobre el código.
+
+## Verificación recomendada
+
+Después de modificar código, ejecutar:
+
+```bash
+pnpm lint
+pnpm build
+```
+
+`pnpm build` ya ejecuta TypeScript con `tsc -b`, por lo que no hace falta un typecheck separado.
+
+## Notas de build
+
+El build usa `rollup-plugin-visualizer` en `vite.config.ts`. Al ejecutar `pnpm build`, el plugin genera o actualiza `bundle-analysis.html`.
+
+## Convenciones
+
+- Usar el alias `@/` para imports desde `src`.
+- Mantener el contenido estático en `src/data/portfolio.json`.
+- Usar CSS Modules para estilos por componente.
+- Usar variables CSS de `src/index.css` antes de escribir colores nuevos.
+- Evitar hardcodear textos de contenido dentro de componentes cuando pertenecen al portafolio.

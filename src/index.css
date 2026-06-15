@@ -178,6 +178,76 @@ figure:hover img[alt^="card-"] {
   color: var(--color-green);
 }
 
+.project-description {
+  color: var(--text);
+}
+
+.project-description h1,
+.project-description h2,
+.project-description h3,
+.project-description h4,
+.project-description h5,
+.project-description h6 {
+  color: var(--title);
+  font-family: Poppins, sans-serif;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+.project-description h1 {
+  font-size: 2rem;
+}
+
+.project-description h2 {
+  font-size: 1.5rem;
+}
+
+.project-description h3,
+.project-description h4,
+.project-description h5,
+.project-description h6 {
+  font-size: 1.125rem;
+}
+
+.project-description p,
+.project-description ul,
+.project-description ol {
+  color: var(--text);
+  margin: 0 0 0.75rem;
+}
+
+.project-description ul,
+.project-description ol {
+  padding-left: 1.25rem;
+}
+
+.project-description ul,
+.project-description ul li {
+  list-style: disc;
+}
+
+.project-description ol,
+.project-description ol li {
+  list-style: decimal;
+}
+
+.project-description li {
+  margin-bottom: 0.5rem;
+}
+
+.project-description strong {
+  color: var(--title);
+  font-weight: 700;
+}
+
+.project-description a {
+  position: relative;
+  z-index: 20;
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .grid {
   display: grid;
   gap: 2rem;
