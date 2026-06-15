@@ -1,11 +1,15 @@
 import { ReactNode } from "react";
-import { portfolio } from "@/data";
+import { motion, useReducedMotion } from "motion/react";
+
+import { usePortfolio } from "@/hooks/use-portfolio";
 import styles from "./contact.module.css";
-import { EmailIcon, LinkedinIcon } from "@/components/icons";
+import { EmailIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons";
 
 type ButtonType = { [key: string]: { icon: ReactNode; btn_hover: string } };
 
 export const Contact = () => {
+  const shouldReduceMotion = useReducedMotion();
+  const { portfolio } = usePortfolio();
   const buttons: ButtonType = {
     email: {
       icon: <EmailIcon />,
@@ -15,10 +19,21 @@ export const Contact = () => {
       icon: <LinkedinIcon />,
       btn_hover: styles.btn_hover_linkedin,
     },
+    whatsapp: {
+      icon: <WhatsappIcon />,
+      btn_hover: styles.btn_hover_whatsapp,
+    },
   };
 
   return (
-    <section id="contact" className="container">
+    <motion.section
+      id="contact"
+      className="container"
+      initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
+      whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
+    >
       <div>
         <div className="gap-0-5">
           <p className="text text-h5 text-secondary">
@@ -45,11 +60,12 @@ export const Contact = () => {
             className={`${styles.container_button} ${
               buttons[media.title].btn_hover
             }`}
+            aria-label={media.label}
           >
             <a
               href={media.value}
               className={styles.href}
-              target="_black"
+              target="_blank"
               rel="noopener noreferrer"
             />
             {buttons[media.title].icon}
@@ -61,6 +77,6 @@ export const Contact = () => {
           </button>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };

@@ -5,3 +5,4 @@ export * from "./gitlab-icon";
 export * from "./stack-overflow-icon";
 export * from "./menu-icon";
 export * from "./close-icon";
+export * from "./whatsapp-icon";

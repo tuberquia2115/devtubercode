@@ -30,14 +30,26 @@
   }
 }
 
+.btn_hover_whatsapp {
+  &:hover {
+    color: var(--background);
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    transform: scale(1.02);
+  }
+}
+
 .container_button {
   display: flex;
   gap: 1rem;
   align-items: center;
+  min-height: 86px;
+  padding: 1rem;
   transition: 300ms;
   color: var(--text);
-  background-color: var(--primary);
-  border: 2px solid var(--text);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
   position: relative;
 }
 
