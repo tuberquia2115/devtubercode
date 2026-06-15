@@ -1,4 +1,4 @@
-import { portfolio } from "@/data";
+import { usePortfolio } from "@/hooks/use-portfolio";
 import styles from "./logo.module.css";
 
 type LogoProps = {
@@ -7,6 +7,7 @@ type LogoProps = {
 };
 
 export const Logo = (props: LogoProps) => {
+  const { portfolio } = usePortfolio();
   const { name, subLogan, src } = portfolio.header.info_logo;
   return (
     <div

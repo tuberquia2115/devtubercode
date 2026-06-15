@@ -1,7 +1,7 @@
 import React from "react";
-import { portfolio } from "@/data";
 import styles from "./footer.module.css";
 import { Divider, Logo } from "@/components";
+import { usePortfolio } from "@/hooks/use-portfolio";
 import {
   GithubIcon,
   LinkedinIcon,
@@ -20,6 +20,7 @@ type IconsType = {
 };
 
 export const Footer = () => {
+  const { portfolio } = usePortfolio();
   const currentYear = new Date().getFullYear();
   const icons: IconsType = {
     github: <GithubIcon />,
