@@ -93,8 +93,6 @@ public/
 
 ## Arquitectura
 
-CodeGraph indexó el proyecto con 45 archivos, 143 nodos y 164 relaciones. El análisis muestra una arquitectura pequeña y directa:
-
 - `src/main.tsx` monta `App`.
 - `src/App.tsx` renderiza la vista principal.
 - `src/views/main.tsx` compone la landing y usa `React.lazy` para cargar secciones debajo de `Summary`.
@@ -152,53 +150,6 @@ Los CVs disponibles son:
 
 - `public/assets/cv-es.pdf`
 - `public/assets/cv-en.pdf`
-
-## CodeGraph
-
-El proyecto fue inicializado e indexado con [CodeGraph](https://github.com/colbymchenry/codegraph).
-
-Archivos creados:
-
-```text
-.codegraph/
-  config.json
-  .gitignore
-  codegraph.db
-```
-
-La base de datos `codegraph.db` es local y queda ignorada por `.codegraph/.gitignore`.
-
-Comandos útiles:
-
-```bash
-codegraph status .
-```
-
-Muestra el estado del índice.
-
-```bash
-codegraph index .
-```
-
-Reconstruye el índice del proyecto.
-
-```bash
-codegraph files
-```
-
-Lista la estructura indexada.
-
-```bash
-codegraph query ProjectCard
-```
-
-Busca símbolos o imports dentro del índice.
-
-```bash
-codegraph context "Explica la arquitectura del portafolio"
-```
-
-Genera contexto en Markdown para una pregunta concreta sobre el código.
 
 ## Verificación recomendada
 
