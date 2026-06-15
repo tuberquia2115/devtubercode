@@ -1,14 +1,12 @@
+.about_layout {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 .buttons_cv {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.container_figure {
-  height: 400px;
-
-  & img {
-    filter: drop-shadow(1px 1px 5px var(--secondary));
-    object-fit: contain;
-  }
+  margin-top: 1rem;
 }
