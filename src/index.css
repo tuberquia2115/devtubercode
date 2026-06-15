@@ -20,15 +20,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --primary: #17262e;
-  --secondary: #fbad34;
-  --color-three: #646cff;
-  --color-four: #1d3557;
-  --background: #1b1b1b;
+  --primary: #17252d;
+  --secondary: #f8b84e;
+  --color-three: #5eead4;
+  --color-four: #2f6f83;
+  --background: #0d141a;
+  --surface: #132129;
+  --surface-soft: #192a33;
+  --border: rgba(255, 255, 255, 0.12);
   --title: #f5f5f5;
-  --info: #D34645;
-  --text: rgba(221, 221, 221, 0.8666666667);
-  --color-green: #00FF85;
+  --info: #f97066;
+  --text: rgba(232, 238, 241, 0.78);
+  --color-green: #48f2a2;
   --font-size: 17px
 }
 
@@ -58,13 +61,17 @@ button {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 3px solid rgba(248, 184, 78, 0.5);
+  outline-offset: 3px;
 }
 
 body {
   font-size: var(--font-size);
   width: 100%;
-  background: linear-gradient(180deg, var(--background), var(--primary));
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(94, 234, 212, 0.08), transparent 30%),
+    linear-gradient(180deg, var(--background), var(--primary));
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -171,7 +178,7 @@ figure:hover img[alt^="card-"] {
 }
 
 .text-h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .text-green {

@@ -1,11 +1,14 @@
 import styles from "./button.module.css";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
+  icon?: React.ReactNode;
+  label?: string;
   variant?: "primary" | "secondary" | "danger" | "outlined";
 }
 
 export const Button: React.FC<ButtonProps> = ({
+  children,
+  icon,
   label,
   variant = "primary",
   className,
@@ -13,10 +16,11 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${className}`}
+      className={`${styles.button} ${styles[variant]} ${className || ""}`}
       {...props}
     >
-      {label}
+      {icon}
+      {children || label}
     </button>
   );
 };
