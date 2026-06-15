@@ -1,8 +1,9 @@
 .section_projects {
-  background: linear-gradient(to bottom, transparent, var(--primary)), url(/assets/bg-section-projects.svg);
-
+  background:
+    linear-gradient(to bottom, transparent, var(--primary)),
+    radial-gradient(circle at 18% 20%, rgba(248, 184, 78, 0.09), transparent 24%),
+    url(/assets/bg-section-projects.svg);
   padding-top: 2rem;
-  /* padding-bottom: 0px !important; */
 }
 
 .container_column {
@@ -12,11 +13,12 @@
 }
 
 .container_header_section {
-  background-image: linear-gradient(to top, transparent, var(--primary));
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 15px;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px;
 
 }

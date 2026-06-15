@@ -1,9 +1,10 @@
-import { portfolio } from "@/data";
 import styles from "./projects.module.css";
 
 import { ProjectCard } from "@/components";
+import { usePortfolio } from "@/hooks/use-portfolio";
 
 export const Projects = () => {
+  const { portfolio } = usePortfolio();
   const { projects } = portfolio.section_projects;
 
   return (
